@@ -1,7 +1,7 @@
 import axios from 'axios';
 import authHeader from './auth-header';
 
-const API_URL = 'http://localhost:4000/api/1/users/';
+const API_URL = 'https://api-jslev.ondigitalocean.app/api/1/users/';
 
 const getPublicContent = () => {
   return axios.get(API_URL, { headers: authHeader() });

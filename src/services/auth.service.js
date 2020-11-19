@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:4000/api/1/auth/';
+const API_URL = 'https://api-jslev.ondigitalocean.app/api/1/auth/';
 
 const register = (login, email, password) => {
   return axios.post(API_URL + 'register', {
