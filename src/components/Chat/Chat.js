@@ -11,7 +11,7 @@ import './Chat.css';
 let socket;
 
 export const Chat = () => {
-  const ENDPOINT = 'http://68.183.75.111/';
+  const ENDPOINT = 'https://socket-vgp2m.ondigitalocean.app/';
 
   const [name, setName] = useState('');
   const [users, setUsers] = useState('');
