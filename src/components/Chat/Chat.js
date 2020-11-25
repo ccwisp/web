@@ -14,7 +14,7 @@ export const Chat = () => {
   const ENDPOINT = 'https://socket-vgp2m.ondigitalocean.app/';
 
   const [name, setName] = useState('');
-  const [users, setUsers] = useState([]);
+  const [users, setUsers] = useState('');
   const [message, setMessage] = useState('');
   const [messages, setMessages] = useState([]);
   const { isLoggedIn } = useSelector((state) => state.auth);

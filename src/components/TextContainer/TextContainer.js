@@ -4,7 +4,7 @@ import onlineIcon from '../../icons/onlineIcon.png';
 
 import './TextContainer.css';
 
-export const TextContainer = ({ ...users }) => (
+export const TextContainer = ({ users }) => (
   <div className="textContainer">
     {users ? (
       <div>
