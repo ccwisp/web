@@ -53,7 +53,6 @@ export const Chat = () => {
     });
 
     socket.on('data', ({ users }) => {
-      console.dir(users);
       setUsers(users);
     });
   }, []);
