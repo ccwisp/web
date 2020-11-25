@@ -11,7 +11,7 @@ export const TextContainer = ({ users }) => (
         <h1>Users chatting</h1>
         <div className="activeContainer">
           <h2>
-            {users.map(({ login: name }) => (
+            {users.map((name) => (
               <div key={name} className="activeItem">
                 {name}
                 <img alt="Online Icon" src={onlineIcon} />

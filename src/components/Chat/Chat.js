@@ -11,10 +11,10 @@ import './Chat.css';
 let socket;
 
 export const Chat = () => {
-  const ENDPOINT = 'https://socket-vgp2m.ondigitalocean.app/';
+  const ENDPOINT = 'http://localhost:5000/';
 
   const [name, setName] = useState('');
-  const [users, setUsers] = useState('');
+  const [users, setUsers] = useState([]);
   const [message, setMessage] = useState('');
   const [messages, setMessages] = useState([]);
   const { isLoggedIn } = useSelector((state) => state.auth);
@@ -53,7 +53,6 @@ export const Chat = () => {
     });
 
     socket.on('data', ({ users }) => {
-      console.dir(users);
       setUsers(users);
     });
   }, []);
